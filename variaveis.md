@@ -25,7 +25,7 @@
   > - Não permitem redeclaração de variáveis no mesmo escopo, mas permitem reatribuição de valores.
   > - Não são içadas
 
-```Javascript
+```javascript
   let x = 10;
 
   if (true) {
