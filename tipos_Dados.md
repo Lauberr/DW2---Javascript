@@ -114,26 +114,3 @@ pessoa = null;
 console.log(pessoa.nome); // Saída: TypeError: Cannot read property 'nome' of null
 ```
 
-## Objeto
-> - Estrutura de dados que permite armazenar e organizer dados de diversos tipos em um unico lugar.
-> - Em linguagens como JavaScript, Python, C++ e Java, são fundamentais para 'POO'
-> - Características:
->   - Propriedades 
->   - Métodos 
->   - Instâncias 
->   - Encapsulamento 
->   - Herança 
->   - Polimorfismo
-
-```javascript
-let pessoa = {
-    nome: "João",
-    idade: 30,
-    saudacao: function() {
-        return "Olá, meu nome é " + this.nome + " e tenho " + this.idade + " anos.";
-    }
-};
-
-console.log(pessoa.nome);
-console.log(pessoa.saudacao()); 
-```
