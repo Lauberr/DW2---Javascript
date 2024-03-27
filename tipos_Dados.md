@@ -7,11 +7,11 @@ Normalmente são suportados diretamente pelo hardware ou pela linguagem de progr
  > - Um dos tipos primitivos mais simples e fundamentais da programação. Ele representa um valor lógico que pode ser `true` ou `false`.
  > - Frequentemente usado em expressores condicionais e em operações de controle de fluxo, onde decisões são tomadas com base na avaliação de uma condição.
   
-  ```javascript
-    let isSunny = true;
-    let isWarm = true;
-    let isBeachWeather = isSunny && isWarm; // true (apenas se  ambos forem verdadeiros)
-  ```
+```javascript
+let isSunny = true;
+let isWarm = true;
+let isBeachWeather = isSunny && isWarm; // true (apenas se  ambos forem verdadeiros)
+```
 ---
 ### Number
 > - Um dos tipos primitivos mais basicos e amplamente utlizados em linguagens de programação. 
@@ -26,18 +26,18 @@ Normalmente são suportados diretamente pelo hardware ou pela linguagem de progr
 >   - Constante Numérica
 
 ```javascript
-  let a = 5;
-  let b = 3;
+let a = 5;
+let b = 3;
 
-  let soma = a + b;
-  let subtracao = a - b;
-  let multiplicacao = a * b;
-  let divisao = a / b;
+let soma = a + b;
+let subtracao = a - b;
+let multiplicacao = a * b;
+let divisao = a / b;
 
-  console.log("A soma de a e b é:", soma);
-  console.log("A subtração de a por b é:", subtracao); 
-  console.log("A multiplicação de a por b é:", multiplicacao); 15
-  console.log("A divisão de a por b é:", divisao);
+console.log("A soma de a e b é:", soma);
+console.log("A subtração de a por b é:", subtracao); 
+console.log("A multiplicação de a por b é:", multiplicacao); 15
+console.log("A divisão de a por b é:", divisao);
 ```
 
 ---
@@ -114,3 +114,48 @@ pessoa = null;
 console.log(pessoa.nome); // Saída: TypeError: Cannot read property 'nome' of null
 ```
 
+## Objeto
+> - Estrutura de dados que permite armazenar e organizer dados de diversos tipos em um unico lugar.
+> - Em linguagens como JavaScript, Python, C++ e Java, são fundamentais para 'POO'
+> - Características:
+>   - Propriedades 
+>   - Métodos 
+>   - Instâncias 
+>   - Encapsulamento 
+>   - Herança 
+>   - Polimorfismo
+
+```javascript
+let pessoa = {
+    nome: "João",
+    idade: 30,
+    saudacao: function() {
+        return "Olá, meu nome é " + this.nome + " e tenho " + this.idade + " anos.";
+    }
+};
+
+console.log(pessoa.nome);
+console.log(pessoa.saudacao()); 
+```
+
+## Array
+> - Estrutura de dados que pode armazenar uma coleção ordenada de elementos.
+> - Parte fundamental em muitas linguagens de progamação e são amplamente utilizados para armazenar e manipular conjuntos de dados.
+> - Características:
+>   - Coleção Ordenada 
+>   - TAmanho fico ou dinamico
+>   - Elementos de Diferentes Tipos 
+>   - Acesso aos Elementos
+>   - Iteração
+>   - Performance
+
+```Javascript
+let numeros = [1, 2, 3, 4, 5];
+console.log(numeros[0]); // Saída: 1
+
+numeros.push(6); // Adiciona o número 6 ao final do array
+console.log(numeros); // Saída: [1, 2, 3, 4, 5, 6]
+
+numeros.pop(); // Remove o último elemento do array
+console.log(numeros); // Saída: [1, 2, 3, 4, 5]
+```
