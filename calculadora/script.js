@@ -116,13 +116,17 @@ function escolheOperador(calculadora, operador) {
  * - Atualizar o display
  */
 function executaCalculo(calculadora) {
-    
     let resultado
+    if (calculadora.operador == "÷"){
+        calculadora.operador = '/'
+    }
+
     if (calculadora.operandoAnterior !== '' && calculadora.operador !== '') {
         resultado = eval((calculadora.operandoAnterior) + (calculadora.operador) + (calculadora.operandoAtual));
     }
     calculadora.operandoAtual = resultado
     calculadora.operandoAnterior = ''
+    calculadora.operador = '÷'
     calculadora.operador = ''
     atualizaDisplay(calculadora)
 
