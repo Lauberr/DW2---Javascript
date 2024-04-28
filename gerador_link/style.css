@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 body{
@@ -14,7 +15,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Poppins", sans-serif;
 }
 
 .container{
@@ -23,34 +23,57 @@ body{
     height: 40vh;
     border-radius: 10px;
     display: grid;
-    justify-content: center;
-    align-items: center;
+    grid-template-rows: 20% 50% 30%;
     flex-wrap: wrap;
+    padding: 30px;
 }
 
 .titulo{
     display: flex;
     margin: 0;
+    justify-content: center;
+    gap: 7px;
 }   
 
 .gerar{
     width: 100%;
-    /* align-items: start; */
+    display: flex;
+    gap: 7px;
+    height: 70%;
+    margin-top: 30px;
 }
 
-input{
-    width: 60%;
-    height: 40px;
-    /* margin-top:; */
+.gerar > input{
+    width: 70%;
+    padding: 15px;
+    font-size: large;
+    color: darkgreen;
+    border-radius: 10px;
+    border: 2px solid grey;
 }
 
 button{
-    height: 40px;
-    width: 40px;
+    /* height: 40px; */
+    width: 15%;
     background-color: green;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.resultado{ display: none; }
+.resultado{
+    display: none;
+    color: grey;
+    font-size: 15px;
+    padding-top: 8px;
+}
+
+.resultado > input{
+    width: 100%;
+    padding: 2px 5px;
+    border-radius: 5px;
+    border: 2px solid darkgrey;
+}
