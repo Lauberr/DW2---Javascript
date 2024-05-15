@@ -53,7 +53,6 @@ body{
 }
 
 button{
-    /* height: 40px; */
     width: 15%;
     background-color: green;
     color: white;
@@ -81,3 +80,44 @@ button{
     margin-bottom: 3px;
 }
 
+@media screen and (max-width: 720px) {
+    .container {
+        width: 85vw;
+        height: 60vh;
+    }
+
+    .titulo{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .titulo > h1{
+        font-size: 23px;
+        width: 100%;
+    }
+    .titulo > img{
+        width: 35px;
+        margin-top: -10px;
+    }
+    .gerar {
+        height: 30%;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .gerar > input{
+        width: 100%;
+    }
+
+    button{
+        width: 48%;
+        height: 100%;
+    }
+
+    .resultado > input{
+        height: 30%;
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+    .resultado > p {
+    }
+}

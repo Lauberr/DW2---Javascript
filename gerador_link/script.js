@@ -39,7 +39,6 @@ function valida(evento){
     if (tel.length > 11) {
         tel = tel.slice(0, 11);
     }
-    
     telefone.value = tel.replace(/(\d{2})(\d{5})(\d{4})/, "($1) $2-$3");
 }
 
