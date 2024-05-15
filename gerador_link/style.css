@@ -33,7 +33,6 @@ body{
     margin: 0;
     justify-content: center;
     gap: 7px;
-    
 }   
 
 .gerar{
@@ -70,7 +69,7 @@ button{
     display: none;
     color: grey;
     font-size: 15px;
-    padding-top: 8px;
+    padding-top: 10px;
 }
 
 .resultado > input{
@@ -78,4 +77,7 @@ button{
     padding: 2px 5px;
     border-radius: 5px;
     border: 2px solid darkgrey;
+    user-select: none;
+    margin-bottom: 3px;
 }
+
