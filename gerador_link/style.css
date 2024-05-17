@@ -50,6 +50,7 @@ body{
     color: darkgreen;
     border-radius: 10px;
     border: 2px solid grey;
+    user-select: none;
 }
 
 button{

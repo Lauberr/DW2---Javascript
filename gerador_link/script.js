@@ -12,9 +12,16 @@ const desc = document.querySelector("[descricao]")
 btnLink.addEventListener("click", () => { geraLink() })
 btnAbrir.addEventListener("click", () => { abrirLink() })
 link.addEventListener("click", () => { copiar() })
-telefone.addEventListener("input", () => { valida() })
+
+telefone.addEventListener("input", () => { 
+    // tamanho = telefone.value.length === 11;
+    // telefone = tamanho ? "border: gren; color:gren;" : "border: red; color: red;";
+    valida()
+})
+
 telefone.addEventListener("click", () => { 
     desc.innerText = 'Clique no link para copiar'; 
+    resultado.style.display = "none"
 })
 
 /*=============================================================
