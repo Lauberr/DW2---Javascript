@@ -1,65 +1,73 @@
-* {
+*{
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(25,2,45,1) 0%, rgba(70,7,124,1) 37%, rgba(49,14,106,1) 100%);
-  color: #fff;
+:root{
+  --roxinho: #530CC5;
+  --botao: #5D5DE7;
+}
+
+body{
+  background-color: var(--roxinho);
+  width: 100vw;
+  height: 100vh;
   display: flex;
+  /* text-align: center; */
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
-.container {
-  background-color: rgba(255, 255, 255, 0.9);
-  width: 50vw;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+.container{
+  background-color: #ffff;
+  border-radius: 5px;
+  height: 50%;
+  padding: 25px 40px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: 10% 75% 5% 10%; 
+}
+
+.campos-container{
+  width: 95%;
+  height: 80%;
+  margin: auto;
+}
+
+textarea{
+  width: 100%;
+  height: 75%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.contador{
+  text-align: center;
+  width: 95%; 
+  margin: auto;
+  margin-top: -10px;
+  color: grey;
+}
+
+button{
+  width: 30%;
+  margin: auto;
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--botao);
+  color: #ffff;
+  font-size: 18px;
 }
 
 h1 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
+  color: var(--roxinho)
 }
 
-.campos-container {
-  margin-bottom: 20px;
-}
 
-label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  resize: none;
-}
-
-.contador {
-  margin-bottom: 20px;
-}
-
-#btn-contar {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: #4CAF50;
-  color: #fff;
-  font-size: 1rem;
-  transition: background-color 0.3s;
-}
-
-#btn-contar:hover {
-  background-color: #45a049;
-}
