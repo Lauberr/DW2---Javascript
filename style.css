@@ -2,7 +2,9 @@
 
 :root{
     --box-width: 350px;
-    --box-height: 220px
+    --box-height: 220px;
+    --h-hover-box: 220px; 
+    --w-hover-box: 350px;
 }
 
 *{
@@ -57,9 +59,10 @@ nav{
     overflow: hidden; 
 }
 
-.box :hover{
-    
-}
+/* .box :hover{
+    box-shadow: 4px 6px 16px #000;
+    transition: 0.3s;
+} */
 
 img{
     width: 100%;
