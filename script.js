@@ -1,1 +1,1 @@
-const proj = document.querySelector([box])
+const proj = document.querySelectorAll("[box]")
