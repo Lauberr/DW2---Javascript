@@ -5,7 +5,6 @@
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
-    overflow-y: hidden;
 }
 
 body{
@@ -87,7 +86,7 @@ button{
         width: 85vw;
         height: 60vh;
     }
-
+    
     .titulo{
         flex-direction: column-reverse;
         align-items: center;
@@ -119,7 +118,5 @@ button{
         height: 30%;
         padding: 15px;
         margin-bottom: 10px;
-    }
-    .resultado > p {
     }
 }
