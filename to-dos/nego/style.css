@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body{
+    background-color: #0D0D0D;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0;
+    margin: auto;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 20vh;
+}
+
+.corpo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.section2{
+    display: none;
+    border-top: #808080 5px solid;
+    border-width: 10px;
+    border-radius: 50px;
+}
+
+input{
+    background-color: #262626;
+    color: #808080;
+    font-size: large;
+    padding-left: 1vw;
+    border-radius: 5px;
+    border: 0;
+}
+
+button{
+    border-radius: 5px;
+    gap: 5px;
+    border: 0;
+}
+
+.btncriar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E6F9F;
+    font-size: large;
+    color: white;
+    width: 5vw;
+    height: 7vh;
+}
+
+.inptcriar{
+    width: 50vw;
+    height: 7vh;
+}
+
+.contador{
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    width: 0.5vw;
+    height: 2vh;
+}
+
+.dinamico{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.dinamico > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 50%;
+}
+
+.criar{
+    display: flex;
+    justify-content: center;
+    margin-top: -4vh;
+    height: 15vh;
+    gap: 15px;
+}
+
+p{
+    color: #808080;
+}
+
+.tarefas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.round-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.round-checkbox .checkmark {
+    position: relative;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.round-checkbox input[type="checkbox"]:checked + .checkmark {
+    background-color: purple;
+}
+
+.round-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.round-checkbox input[type="checkbox"]:checked + .checkmark:after {
+    display: block;
+}
+
+.round-checkbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.taskname{
+    color: white;
+    font-size: large;
+}
+
+.trash{
+    background-color: transparent;
+    cursor: pointer;
+    color: #808080;
+}
+
+.addtask{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw;
+    background-color: #333333;
+    border-radius: 5px;
+    width: 50vw;
+    height: 5vh;
+    margin: auto;
+    margin-bottom: 10px;
+}
