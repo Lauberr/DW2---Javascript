@@ -142,6 +142,7 @@ body{
     border-top: 0.5px solid var(--gray-4);
     border-radius: var(--bord-rad);
     padding: 50px;
+    margin-top: 10px;
 }
 
 .empty > img{
@@ -177,6 +178,12 @@ body{
     padding: 15px;
     font-size: small;
     gap: 15px;
+}
+
+.to-do > .task > p {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
 }
 
 .to-do > .task > i{
@@ -217,9 +224,4 @@ body{
     color: var(--gray-1);
     font-size: 8px;
     line-height: 1;
-}
-
-.to-do > .task > .teste-visual{
-    text-decoration: line-through;
-    color: var(--gray-3);
 }
